@@ -4,7 +4,7 @@
  * Date: 8/4/19
  */
 
-namespace Controller;
+namespace Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
