@@ -6,11 +6,12 @@
 
 namespace App\Config;
 
-use Controller\NewPageController;
+use Controllers\NewPageController;
 use Controllers\HelloController;
 use Symfony\Component\Routing;
 
 include  __DIR__.'/../Controllers/HelloController.php';
+include  __DIR__.'/../Controllers/NewPageController.php';
 
 $routes = new Routing\RouteCollection();
 
