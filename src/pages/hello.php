@@ -4,5 +4,6 @@
  * src/pages/helloWorld.php
  */
 
-$name = isset($name)? $name : 'World';
+// ?? mean if isset and not empty $name  
+$name = $name ?? $name : 'World';
 echo "Hello {$name}";

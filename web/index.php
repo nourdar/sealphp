@@ -34,7 +34,7 @@ function render_template($request)
  * create a new Request if it is not passed from other files like test
  * @var Request $request
  */
-$request = $request? $request : Request::createFromGlobals();
+$request = $request ?? Request::createFromGlobals();
 
 /**
  * contain the routes list
@@ -82,7 +82,7 @@ try {
     $response= call_user_func($request->attributes->get('_controller'),$request);
 
 }catch (Exception $exception){
-    $response = new Response('not found',404);
+    $response = new Response('not found', 404);
 }
 
 //send the response
